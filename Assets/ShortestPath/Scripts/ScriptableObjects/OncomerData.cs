@@ -6,12 +6,21 @@ using UnityEngine;
 public class OncomerData : ScriptableObject
 {
     [SerializeField]
+    private Oncomer.Type m_type;
+    [SerializeField]
     private Sprite m_sprite;
     [SerializeField]
     private List<TileData.WalkType> m_canWalkOn;
     [SerializeField]
     private float m_speed;
+    [SerializeField]
+    private float m_maxHealth;
+    [SerializeField]
+    private bool m_movesDiagonal = false;
 
+    public Oncomer.Type Type {
+        get { return m_type; }
+    }
     public Sprite Sprite {
         get { return m_sprite; }
     }
@@ -20,5 +29,11 @@ public class OncomerData : ScriptableObject
     }
     public float Speed {
         get { return m_speed; }
+    }
+    public float MaxHealth {
+        get { return m_maxHealth; }
+    }
+    public bool MovesDiagonal {
+        get { return m_movesDiagonal; }
     }
 }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 683611376501781120}
   - component: {fileID: 683611376501781123}
   - component: {fileID: 3362830141846312650}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Oncomer
   m_TagString: target
   m_Icon: {fileID: 0}
@@ -73,8 +73,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1103426423
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -99,10 +99,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b6354afca06d748a3d80dec2e25964, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_debugPath: 1
+  m_debugPath: 0
   m_debugPrefab: {fileID: 656166759001015774, guid: 8a6c11c95690b114587d89165e401fd7, type: 3}
   m_debugHolder: {fileID: 8310328431762939593}
-  m_oncomerData: {fileID: 0}
+  m_type: 3
 --- !u!61 &3362830141846312650
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -138,7 +138,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4665703907586786882}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DebugHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
